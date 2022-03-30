@@ -10,7 +10,7 @@ def app():
 
     st.write("Halaman ini menampilkan Data Provinsi")
 
-    df_a_prov = pd.read_csv('dataprov.csv')
+    df_a_prov = pd.read_csv("dataprov.csv")
     total= df_a_prov.jml.sum()
     df_a_prov['persen'] = round(((df_a_prov['jml'] / total) * 100),2)
 
