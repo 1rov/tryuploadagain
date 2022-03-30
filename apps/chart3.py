@@ -15,7 +15,7 @@ def app():
     st.write('Ini adalah Halaman Grafik Data Per Provinsi.')
 
     # Load dataset
-    df_a_prov = pd.read_csv('data.csv')
+    df_a_prov = pd.read_csv('apps/data.csv')
     total= df_a_prov.jml.sum()
     df_a_prov['persen'] = round(((df_a_prov['jml'] / total) * 100),2)
 
